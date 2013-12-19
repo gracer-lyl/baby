@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>新增随访记录</title>
+	<link rel="stylesheet" href="css/m.min.css" type="text/css"></head>
+<body class="bg-gray">
+	<section class="huge-box">
+		<form id="formula-form">
+			<ul class="form-list mt0">
+				<li class="clearfix">
+					<label class="f-l">测量日期：</label>
+					<div class="input-wrap f-r">
+						<div class="select-wrap nobg">
+							<input type="date" class="input-date" id="l-checkdate"/>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">体重：</label>
+					<div class="input-wrap f-r">
+						<input type="number" id="l-weight" />
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">身长：</label>
+					<div class="input-wrap f-r">
+						<input type="number" id="l-height" />
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">头围：</label>
+					<div class="input-wrap f-r">
+						<input type="number" id="l-head" />
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">母乳喂养：</label>
+					<div class="input-wrap f-r">
+						<input type="text" id="l-breastfeeding" />
+					</div>
+				</li>
+
+				<li class="line"></li>
+
+				<li class="clearfix">
+					<label class="f-l">配方奶种类：</label>
+					<div class="input-wrap f-r">
+						<p class="btn-wrap">
+							<a href="#" class="green-btn2">查看营养数据</a>
+							<a href="#"  class="green-btn2">新增加配方奶</a>
+						</p>
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">院内/外：</label>
+					<div class="input-wrap f-r">
+						<div class="select-wrap">
+							<select name="hospital" id="l-location">
+								<option value="1">骨科医院</option>
+							</select>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">品牌：</label>
+					<div class="input-wrap f-r">
+						<div class="select-wrap">
+							<select name="class" id="l-brand">
+								<option value="1">科室1</option>
+								<option value="2">科室2</option>
+							</select>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">种类：</label>
+					<div class="input-wrap f-r">
+						<div class="select-wrap">
+							<select name="profile" id="l-kind">
+								<option value="1">职称1</option>
+								<option value="2">职称2</option>
+								<option value="3">职称3</option>
+								<option value="4">职称4</option>
+							</select>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">配方奶营养量：</label>
+					<div class="input-wrap f-r">
+						<div class="select-wrap">
+							<select name="profile" id="l-nutrition">
+								<option value="1">职称1</option>
+								<option value="2">职称2</option>
+								<option value="3">职称3</option>
+								<option value="4">职称4</option>
+							</select>
+						</div>
+					</div>
+				</li>
+				<li class="line"></li>
+				<li class="clearfix">
+					<label class="f-l">&nbsp;</label>
+					<div class="input-wrap form-btns f-r">
+						<a href="javascript:void(0)" class="btn green-btn submit">提     交</a>
+					</div>
+				</li>
+			</ul>
+	</form>
+</section>
+     <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+	<script>
+		$(function(){
+			MZ.app.addVisitSubmit('#formula-form');
+		})
+	</script>
+</body>
+</html>

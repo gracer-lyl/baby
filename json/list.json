@@ -1,0 +1,18 @@
+{
+	"list": [{
+		"childMerchantId": "0009",
+		"logUrl": "http://42.121.2.208:8080/MerchantPortal/childPicUpload/00190009/childLogo.png",
+		"merchantDesc": "士大夫撒旦",
+		"merchantId": "0019",
+		"merchantName": "0009测试购物"
+	}, {
+		"childMerchantId": "0010",
+		"logUrl": "http://42.121.2.208:8080/MerchantPortal/childPicUpload/00190009/childLogo.png",
+		"merchantDesc": "描述信息",
+		"merchantId": "0020",
+		"merchantName": "0010测试购物"
+	}],
+	"totalCount": 2,
+	"message": "成功",
+	"statusCode": "Y"
+}

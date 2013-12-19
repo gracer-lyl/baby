@@ -1,0 +1,13 @@
+{
+	"name": "Less",
+	"version": "0.1.0",
+	"description": "Less for Test",
+	"homepage": "http://www.baidu.com/",
+	"author": "kissy小鬼",
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-contrib-less": "~0.7.0",
+		"grunt-contrib-watch": "~0.5.3",
+		"grunt-contrib-cssmin": "~0.6.2"
+	}
+}

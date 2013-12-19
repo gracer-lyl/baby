@@ -1,0 +1,20 @@
+{
+	"list": [{
+		"merchantType": 1,
+		"merchantTypeName": "美食"
+	}, {
+		"merchantType": 2,
+		"merchantTypeName": "购物"
+	}, {
+		"merchantType": 3,
+		"merchantTypeName": "休闲娱乐"
+	}, {
+		"merchantType": 4,
+		"merchantTypeName": "丽人"
+	}, {
+		"merchantType": 5,
+		"merchantTypeName": "结婚"
+	}],
+	"message": "成功",
+	"statusCode": "Y"
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>生长曲线</title>
+<link rel="stylesheet" href="css/m.min.css" type="text/css">
+<style>
+    #canvasDiv1 > div {
+        -webkit-overflow-scrolling: touch;
+        -webkit-transform: translate3d(0,0,0);
+    }
+</style>
+</head>
+<body>
+    <section>
+           <div class="nav-wrapper">
+                <a id="L-arrow-left" class="arrow"><span>&lt;</span></a>
+                <div class="nav-cont" id="L-nav">
+                    <ul>
+                        <li><a href="#">随访记录</a></li>
+                        <li><a href="#">生长曲线</a></li>
+                        <li><a href="#">生长速率</a></li>
+                        <li><a href="#">详细资料</a></li>
+                    </ul>
+                </div>
+                <a id="L-arrow-right" class="arrow"><span>&gt;</span></a>
+           </div>
+    
+            <div class="chart-frame">
+                <div class="chart-tab">
+                    <a class="current" href="#">体     重</a>
+                    <a href="#">身     长</a>
+                    <a href="#">头     围</a>
+                </div>
+                <h3 class="chart-y">体              重</h3>
+
+                <div class="chart-stage" id="linechart">
+                        <div id="canvasDiv1"></div>
+                </div>
+
+                <h3 class="chart-x">月龄</h3>
+            </div>
+
+            <ul class="select-block clearfix">
+                     <ul>
+                               <li>
+                                    <div class="iradio checked"><input type="radio" name="place" value="0" checked></div>  
+                                    <label for="y-in">WHO</label>
+                                </li>
+                                <li>
+                                    <div class="iradio"><input type="radio" name="place" value="1" checked></div>  
+                                    <label for="y-in">上海</label>
+                                </li>
+                     </ul>
+            </ul>
+
+    </section>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/extend/touch.js"></script>
+    <script type="text/javascript" src="js/extend/iscroll.js"></script>
+    <script type="text/javascript" src="js/extend/highlight.js"></script>
+    <script type="text/javascript" src="js/extend/parseTpl.js"></script>
+    <script type="text/javascript" src="js/core/gmu.js"></script>
+    <script type="text/javascript" src="js/core/event.js"></script>
+     <script type="text/javascript" src="js/core/widget.js"></script>
+    <script type="text/javascript" src="js/widget/navigator/navigator.js"></script>
+    <script type="text/javascript" src="js/widget/navigator/scrolltonext.js"></script>
+    <script type="text/javascript" src="js/widget/navigator/$scrollable.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/chart.min.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript">
+        MZ.app.slideNavigator()
+        MZ.app.checkRadio('.iradio');
+    </script>
+</body>
+</html>

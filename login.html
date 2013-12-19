@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>登录</title>
+<link rel="stylesheet" href="css/m.min.css" type="text/css">
+</head>
+<body>
+	<section>
+		<form>
+			<ul class="form-list">
+				<li class="clearfix">
+					<label class="f-l">用户名：</label>
+					<div class="input-wrap f-r">
+						<input id="L-username" name="username" type="text" />
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">密码：</label>
+					<div class="input-wrap f-r">
+						<input id="L-password" name="password" type="password" />
+					</div>
+				</li>
+				<li class="last clearfix">
+					<input type="checkbox" name="remeber" id="L-remember"/>
+					<label for="L-remember" class="remember-me">记住我</label><a href="./password.html">忘记密码</a>
+				</li>
+			</ul>
+			<div class="form-btns clearfix">
+				<div class="btn-l f-l">
+					<a href="./register.html" class="btn">注册</a>
+				</div>
+				<div class="btn-r f-r">
+					<a href="javascript:void(0)" id="L-login-btn" class="btn">登录</a>
+				</div>
+			</div>
+		</form>
+	</section>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript">
+		MZ.app.login()
+	</script>
+</body>
+</html>

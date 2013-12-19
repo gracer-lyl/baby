@@ -1,0 +1,133 @@
+body {
+	background: url(img/bg.png);
+}
+.form-list {
+	margin-top: 30px;
+	li {
+		margin-bottom: 10px;
+		line-height: 36px;
+		label {
+			display: inline-block;
+			width: 28%;
+			text-align: right;
+			font-size: 14px;
+			color: #8a8a8a;
+			white-space: nowrap;
+		}
+		.input-wrap {
+			width: 72%;
+			input {
+				background-color: #FFF;
+				height: 28px;
+				border: 1px solid #b4b4b4;
+				border-radius: 3px;
+				padding: 0 3px;
+				width: 88%;
+				font-size: 14px;
+				box-shadow: 0px 0px 3px #CCC inset;
+			};
+			.input-date{
+				border: none;
+				background: none;
+				outline: none;
+				vertical-align: top;
+				width:97%;
+			};
+			.iradio{
+				background: url(img/sprite.png) no-repeat -178px -22px;
+				width:23px;
+				height:22px;border: none;
+				cursor: pointer;
+				position: absolute;
+				top: 5px;
+				left: 0;
+				input{
+					visibility:hidden;
+				}
+			};
+			.iradio.checked{
+				background-position: -178px 0;
+			};
+			.radio-wrap{
+				ul{overflow:hidden;}
+				li{position:relative;padding-left:30px;line-height:10px;float:left;width:35.8%;}
+				label{width:auto;padding-top:11px;}
+			};
+			.select-wrap {
+				background-color: #FFF;
+				height: 28px;
+				border: 1px solid #b4b4b4;
+				border-radius: 3px;
+				width: 90%;
+				box-shadow: 0px 0px 3px #CCC inset;
+				background-image: url(img/select-down.png);
+				background-repeat: no-repeat;
+				background-position: right center;
+				background-size: 28px 28px;
+				select {
+					background-color:transparent;
+					-webkit-appearance: none;
+					border:none;
+					width: 100%;
+					line-height: 28px;
+					vertical-align: top;
+					border-radius: 3px;
+					padding: 0 0 0 5px;
+					font-size: 14px;
+					box-sizing: border-box;
+				}
+			}
+			.select-wrap.nobg{background:none}
+		}
+	};
+	li.last {
+		margin-top: 20px;
+		text-align: center;
+		label.remember-me {
+			display: inline-block;
+			padding: 0 10px 0 4px;
+			font-size: 14px;
+			width: auto;
+			cursor: pointer;
+		}
+		a {
+			padding-left: 10px;
+			color: #0db6e1;
+			border-left: 2px solid #8a8a8a;
+		}
+	};
+	li.last-agree {
+		text-align: center;
+		label {
+			display: inline;
+		}
+		a {
+			color: #0db6e1;
+		}
+	};
+	li.line{border:1px solid #ccbf93;margin:20px;}
+
+}
+
+.form-btns {
+	margin-top: 20px;
+	button {
+		border: 0;
+		cursor: pointer;
+	}
+	div {
+		width: 45%;
+		box-sizing: border-box;
+	}
+	div.btn-l {
+		text-align: right;
+		padding-right: 0px;
+	}
+	div.btn-r {
+		text-align: left;
+		padding-left: 0px;
+	}
+	.btn{
+		width:90%;
+	}
+}

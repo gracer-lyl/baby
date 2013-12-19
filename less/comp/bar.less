@@ -1,0 +1,128 @@
+/** 一级导航样式 */
+.ui-navigator-list,
+.ui-navigator-list li {
+    list-style: none;
+}
+.ui-navigator-list li {
+    display: inline-block;
+    white-space:nowrap;/*内容不换行*/
+}
+
+.ui-navigator {
+    /*
+    border-top: 1px solid #2468c9;
+    border-bottom: 1px solid #0145a5;
+    background:#2773dc;
+    */
+}
+.ui-navigator-list {
+    width: 100%;
+    display: -webkit-box;
+}
+.ui-navigator-list li {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+.ui-navigator-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    -webkit-box-sizing:border-box;
+    padding: 0 15px;
+}
+.ui-navigator-list li.ui-state-hover,
+.ui-navigator-list li.ui-state-active {
+    background: #0c4da8;
+}
+
+.ui-scroller {
+    padding: 0;
+    margin: 0;
+    display: inline-block;/*重要，靠他让宽度由子节点撑开*/
+}
+.ui-scroller .ui-navigator-list {
+    display: table;
+    table-layout: fixed;/*宽度可控*/
+    white-space:nowrap;/*内容不换行*/
+    width: auto;
+}
+.ui-scroller .ui-navigator-list:after {
+    content: '';
+    clear: both;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.ui-scroller .ui-navigator-list li {
+    display: table-cell;
+}
+
+.nav-cont {
+    border-width: 0;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+}
+
+.nav-cont li a {
+    color: #a58e49;
+    text-shadow: 0 1px 2px #fff;
+}
+
+.nav-cont li.ui-state-active,
+.nav-cont li.ui-state-hover {
+    background: transparent;
+}
+.nav-cont li.ui-state-active a,
+.nav-cont li.ui-state-hover a{
+    color: #FFF;
+    border: 1px solid #836919;
+    background-color: #b19d60;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 #836919 inset;
+    text-shadow: 0 1px 2px #836919;
+}
+
+.nav-cont .ui-scroller {
+    position: relative;
+}
+.nav-cont .bar {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    overflow: hidden;
+    -webkit-box-sizing:border-box;
+    padding: 0 10px;
+    -webkit-transition: left 200ms ease-out;
+}
+.nav-cont .bar:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #e81459;
+}
+.nav-wrapper {
+    display: -webkit-box;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#fcf9f5),to(#e3dbce));
+    box-shadow: 0 1px 1px 0 #666;
+    line-height: 44px;
+}
+
+.arrow {
+    width: 30px;
+    -webkit-box-flex: 0;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: -webkit-box;
+    color: #836919;
+}
+.ui-scroller {
+    float: left;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>配方奶</title>
+	<link rel="stylesheet" href="css/m.min.css" type="text/css"></head>
+<body class="bg-gray">
+	<section class="huge-box">
+		<form id="formula-form">
+			<ul class="form-list mt0">
+				<li class="clearfix location">
+					<label class="f-l">院内/外：</label>
+					<div class="input-wrap f-r">
+						<div class="radio-wrap">
+							<ul>
+								<li>
+									<label for="y-in">院内</label>
+									<div class="iradio checked"><input type="radio" name="location" value="0" checked></div>  
+								</li>
+								<li>
+									<label for="y-out">院外</label>
+									<div class="iradio"><input type="radio" name="location" value="1"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix brand">
+					<label class="f-l">品牌：</label>
+					<div class="input-wrap f-r">
+						<div class="radio-wrap">
+							<ul>
+								<li>
+									<label for="y-in">惠氏</label>
+									<div class="iradio checked"><input type="radio" name="brand" value="0" checked></div>  
+								</li>
+								<li>
+									<label for="y-out">品牌A</label>
+									<div class="iradio"><input type="radio" name="brand" value="1"></div>
+								</li>
+						<li>
+								<label for="y-out">品牌B</label>
+									<div class="iradio"><input type="radio" name="brand" value="2"></div>
+								</li>
+								<li>
+									<label for="y-out">其他</label>
+									<div class="iradio"><input type="radio" name="brand" value="3"></div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">种类：</label>
+					<div class="input-wrap f-r">
+						<input type="text" id="l-kind" />
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">能量：</label>
+					<div class="input-wrap f-r">
+						<input type="text" id="l-energy"/>
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">蛋白质：</label>
+					<div class="input-wrap f-r">
+						<input type="text" id="l-protein" />
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">碳水化合物：</label>
+					<div class="input-wrap f-r">
+						<input type="text" id="l-carbohydrates" />
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">脂肪：</label>
+					<div class="input-wrap f-r">
+						<input type="text" id="l-fat" />
+					</div>
+				</li>
+				<li class="clearfix">
+					<label class="f-l">&nbsp;</label>
+					<div class="input-wrap form-btns f-r">
+						<a href="javascript:void(0)" class="btn green-btn submit">提     交</a>
+					</div>
+				</li>
+			</ul>
+			 
+		
+	</form>
+</section>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+          <script type="text/javascript" src="js/base.js"></script>
+	<script>
+		$(function(){
+			MZ.app.checkRadio('.iradio');
+			MZ.app.formulaSubmit('#formula-form');
+		})
+	</script>
+
+</body>
+</html>
